@@ -1,0 +1,168 @@
+/*importé les polices d'écriture*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body{/*page principal*/
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, sans-serif;
+    background-color:#849CA1;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    /*Menu : Ayent*/
+    color: #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    margin-left: 60px;
+}
+nav .Menu2{
+    /*Menu : Maison de la santé*/
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    margin-right: 60px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-image: url('https://th.bing.com/th/id/R.c70f277e70cfc8198c9c06a5b6af391e?rik=e19aBRsybkBDow&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    color: #4f927d;
+    padding: 100px;
+    height: 100vh;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+
+.main{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.main .content .card .etage3{
+   padding: 20px;
+   background-color: #fff;
+   color:#000;
+   border-radius: 10px
+}
+
+.main .content .card .etage3:hover{
+    background-color: #bababa;
+ }
+
+ .liste3{
+    display: none;
+ }
+
+ .main .content .card :hover .liste3{
+    display: block;
+ }
+
+
+.main .content .card .etage2{
+    padding: 20px;
+    background-color: #fff;
+    color:#000;
+    border-radius: 10px
+ }
+
+ .main .content .card .etage1{
+    padding: 20px;
+    background-color: #fff;
+    color:#000;
+    border-radius: 10px
+ }
+
+ .main .content .card .etage0{
+    padding: 20px;
+    background-color: #fff;
+    color:#000;
+    border-radius: 10px
+ }
+
+footer{
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 30px 100px;;
+}
+footer h1{
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid #ce2222;
+    width: 20%;
+}
+footer .services{
+    margin-top: -10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+footer .services .service{
+    margin-right: 30px;
+}
+footer .services .service p{
+    max-width: 300px;
+}
+footer #contact{
+    color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width:680px){
+    header {
+        background-size: cover;
+        background-attachment: fixed; /* Changer la valeur à "fixed" */
+    }
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .main .card {
+        margin: 10px;
+    }
+    .main .content .card{
+        display: block;
+    }
+    footer{
+        padding: 30px;
+    }
+}
