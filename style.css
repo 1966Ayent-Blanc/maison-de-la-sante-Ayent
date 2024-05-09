@@ -26,7 +26,7 @@ nav h1{
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-size: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 nav .Menu2{
     /*Menu : Maison de la santé*/
@@ -53,6 +53,7 @@ header {
     align-items: center;
     background-image: url('https://th.bing.com/th/id/R.c70f277e70cfc8198c9c06a5b6af391e?rik=e19aBRsybkBDow&pid=ImgRaw&r=0');
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     color: #4f927d;
     padding: 100px;
@@ -85,6 +86,8 @@ a {
     background-image: url('https://th.bing.com/th/id/R.c70f277e70cfc8198c9c06a5b6af391e?rik=e19aBRsybkBDow&pid=ImgRaw&r=0');
     background-position: center;
     background-size: cover;
+
+
  }
 .main .content .card .etage3{
    padding: 20px;
@@ -150,22 +153,3 @@ footer #contact{
     color: rgb(181, 181, 181);
 }
 
-@media screen and (max-width:680px){
-    header {
-        background-size: cover;
-        background-attachment: fixed; /* Changer la valeur à "fixed" */
-    }
-    nav .onglets {
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-    .main .card {
-        margin: 10px;
-    }
-    .main .content .card{
-        display: block;
-    }
-    footer{
-        padding: 30px;
-    }
-}
